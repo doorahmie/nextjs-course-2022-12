@@ -1,4 +1,5 @@
 // domain.com/news
+import Link from "next/link";
 import { Fragment } from "react";
 function NewsPage() {
   return (
@@ -15,9 +16,7 @@ function NewsPage() {
       <h1>The News Page</h1>
       <ul>
         <li>NextJS IS A Great Framework</li>
-        <li>
-          <a href="/news/something-important">Something Important</a>
-        </li>
+        <Link href="/news/something-important">Something Important</Link>
         <li>Something else </li>
       </ul>
     </Fragment>
